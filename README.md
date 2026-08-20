@@ -14,9 +14,9 @@ VBA II (Veri Bilimi ve Analitik) dersi kapsamındaki **veri şirketi simülasyon
 
 ## Üyeler
 
-Kendi satırınızı ekleyin (P numarası = soyadına göre alfabetik sıra):
+Kendi satırınızı ekleyin (lider `PM`, diğer üyeler soyadına göre alfabetik `P2–P5`):
 
-- Ad Soyad — P1
+- Ad Soyad — PM (lider)
 - Ad Soyad — P2
 - Ad Soyad — P3
 - Ad Soyad — P4
