@@ -1,4 +1,4 @@
-# <Şirket Adı> — Grup B
+# Logistics Intelligence Network (LIN) group b
 
 VBA II (Veri Bilimi ve Analitik) dersi kapsamındaki **veri şirketi simülasyonu** çalışma deposu.
 
@@ -6,9 +6,9 @@ VBA II (Veri Bilimi ve Analitik) dersi kapsamındaki **veri şirketi simülasyon
 
 | Alan | Değer |
 |---|---|
-| Şirket adı | <Hafta 1'de seçilecek> |
+| Şirket adı | Logistics Intelligence Network (LIN) |
 | Sektör | Lojistik |
-| Teknoloji kararı | <dil + kütüphaneler, örn. "Python · pandas · matplotlib"> |
+| Teknoloji kararı | dil:python,typescript kütüphaneler:polars, GeoPandas & Shapely,H3 (Uber),XGBoost & LightGBM,Deck.gl (Uber),Mapbox GL JS, pandas , numpy , matplotlib, seaborn |
 
 > Teknoloji serbesttir; karar Hafta 1'de şirketçe verilip buraya yazılır.
 
@@ -16,10 +16,10 @@ VBA II (Veri Bilimi ve Analitik) dersi kapsamındaki **veri şirketi simülasyon
 
 Kendi satırınızı başlangıç rolünüzle ekleyin. Lider `PM`'dir; diğer üç üye PM'nin işe alımıyla başlangıç rollerine yerleştirilir. Roller Görev 1–3 boyunca dönem planı §1.3'e göre döner:
 
-- Ad Soyad — PM (lider)
-- Ad Soyad — BE (başlangıç rolü)
-- Ad Soyad — FE (başlangıç rolü)
-- Ad Soyad — DQ (başlangıç rolü, veri analisti ve kalite)
+- Sude ÇUKURTAŞ — PM (lider)
+- Sema COŞKUN — BE (başlangıç rolü)
+- Ece Naz AKTÜRK  — FE (başlangıç rolü)
+- Aykut ÇAKICI  — DQ (başlangıç rolü, veri analisti ve kalite)
 
 ## Klasör Yapısı
 
