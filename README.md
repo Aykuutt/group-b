@@ -20,6 +20,7 @@ Kendi satırınızı başlangıç rolünüzle ekleyin. Lider `PM`'dir; diğer ü
 - Sema COŞKUN — BE (başlangıç rolü) sema788
 - Ece Naz AKTÜRK  — FE (başlangıç rolü) ece-naz
 - Aykut ÇAKICI  — DQ (başlangıç rolü, veri analisti ve kalite) Aykuutt
+- İpek ÖZARSLAN — Junior
 
 ## Klasör Yapısı
 
