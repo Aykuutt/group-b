@@ -1,0 +1,42 @@
+# Hafta 3 Raporu — Grup B (Lojistik / Sevkiyatlar)
+
+**Rapor tarihi:** GG.AA.YYYY
+**Hazırlayan:** <PM adı>
+**Ekip:** PM: <ad> · BE: <ad> · DQ: <ad> · FE: <ad>
+
+## Planlanan
+Bu hafta için 4 Issue açıldı, hepsinde son tarih ve kabul kriteri var:
+
+| Issue | Atanan | Son tarih | Kabul kriteri (özet) |
+|---|---|---|---|
+| G1-veri | BE | GG.AA | `data/sevkiyat-verisi.csv`, en az 100 satır, şema `docs/veri-sozlugu-g1.md` içinde |
+| G1-analiz | DQ | GG.AA | `docs/analiz-g1.md`, en az 5 metrik (2 kırılım), yorum + bulgular |
+| G1-gorsel | FE | GG.AA | `/visuals` içinde 2 PNG: zaman serisi + kırılım, başlık ve eksen etiketi var |
+| G1-test | DQ | GG.AA | `tests/test-cases.md`, en az 5 senaryo |
+
+Devir teslim sırası: BE → DQ → FE → DQ (test) → PM (rapor).
+
+## Yapılan
+| Issue | Durum | Çıktı dosyası | Commit |
+|---|---|---|---|
+| G1-veri | <Done / devam ediyor> | `data/sevkiyat-verisi.csv` (<N> satır), `docs/veri-sozlugu-g1.md`, `src/veri_uret.py` | `<hash>` |
+| G1-analiz | <...> | `docs/analiz-g1.md`, `src/analiz.py` | `<hash>` |
+| G1-gorsel | <...> | `visuals/<dosya1>.png`, `visuals/<dosya2>.png`, `src/grafik_uret.py` | `<hash>` |
+| G1-test | <...> | `tests/test-cases.md` (<N> senaryo) | `<hash>` |
+| Skill'ler | <...> | `skills/*/SKILL.md`, `AGENTS.md` | `<hash>` |
+
+## Tıkanan
+- <Ne tıkandı? Örn: "FE, BE'nin devir teslim yorumunu beklediği için grafik üretimi <gün> başladı.">
+  - Neden: <...>
+  - Çözüm / sonraki adım: <...>
+- (Tıkanan yoksa: "Bu hafta kritik bir tıkanma yaşanmadı." yaz.)
+
+## Kim ne yaptı
+- **BE (<ad>):** <yaptığı iş>, commit `<hash>`
+- **DQ (<ad>):** <yaptığı iş>, commit `<hash>`
+- **FE (<ad>):** <yaptığı iş>, commit `<hash>`
+- **PM (<ad>):** 4 Issue açtı, panoyu kurdu ve günlük kontrol etti, `AGENTS.md` ve `skills/pm-rapor/SKILL.md` yazdı, bu raporu hazırladı. Commit `<hash>`
+
+## Sonraki hafta (Hafta 4)
+- DQ test senaryolarının "gerçekleşen sonuç" ve "geçti/kaldı" sütunlarını doldurur.
+- <Varsa kalan işler>
