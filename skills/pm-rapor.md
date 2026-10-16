@@ -32,7 +32,7 @@ description: Grup B'nin (Lojistik / Sevkiyatlar) haftalık sprint raporunu repor
 ```markdown
 # Sprint Raporu — Hafta XX (GG.AA–GG.AA.YYYY)
 
-**Şirket:** Grup B — Lojistik / Sevkiyatlar · **PM:** <PM adı>
+**Şirket:** Grup B — Lojistik / Sevkiyatlar · **PM:** Sude Çukurtaş
 
 ## Planlanan
 | Issue | Başlık | Atanan | Son tarih |
