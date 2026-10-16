@@ -14,7 +14,7 @@ Ajan, görev aldığında ilgili `SKILL.md` dosyasını okuyup talimatları izle
 ## Devir teslim zinciri
 BE veri → DQ analiz → FE görsel → DQ test → PM rapor.
 Her adım ilgili Issue'ya commit hash'li yorumla biter.
-
+> Kural: Roller görevden göreve döner (plan §1.3); skill'ler rolle birlikte el değiştirir. Yeni sahibi skill'i günceller ve bu tablodaki "Sahibi" sütununu değiştirir.
 ## Kurallar
 - Veri sentetiktir; gerçek kişi verisi yok.
 - Veri üretimi tohum 42 ile tekrarlanabilir.
