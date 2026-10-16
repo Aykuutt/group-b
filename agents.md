@@ -8,8 +8,8 @@ Ajan, görev aldığında ilgili `SKILL.md` dosyasını okuyup talimatları izle
 | be-veri | `skills/be-veri/SKILL.md` | BE | Sabit tohumla 300 satırlık sevkiyat verisi üretir | `python src/veri_uret.py` |
 | dq-analiz | `skills/dq-analiz/SKILL.md` | DQ | Teslimat süresi, gecikme oranı, rota tablosu, haftalık hacim, top-3 rota metriklerini hesaplar | `python src/analiz.py` (BE devir teslimi sonrası) |
 | fe-gorsel | `skills/fe-gorsel/SKILL.md` | FE | Haftalık hacim ve rota yoğunluğu grafiklerini üretir | `python src/grafik_uret.py` (taslak Issue'ya eklendikten sonra) |
-| dq-test | `skills/dq-test/SKILL.md` | DQ | 5 veri kalitesi test senaryosu yazar | Ajana: "dq-test skill'ini oku" |
 | pm-rapor | `skills/pm-rapor/SKILL.md` | Sude ÇUKURTAŞ PM | Haftalık raporu commit/Issue geçmişinden hazırlar | Ajana: "pm-rapor skill'ini oku" |
+| dq-test | `skills/dq-test/SKILL.md` | DQ | Sevkiyat verisi için en az 5 manuel test senaryosu tanımlar; gerçekleşen sonuç alanlarını boş bırakır | Görev #17 için önce bu dosyayı oku; senaryoları `tests/test-cases.md` içine yaz |
 
 ## Devir teslim zinciri
 BE veri → DQ analiz → FE görsel → DQ test → PM rapor.
