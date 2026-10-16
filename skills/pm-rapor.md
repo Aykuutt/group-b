@@ -18,7 +18,7 @@ description: Grup B'nin (Lojistik / Sevkiyatlar) haftalık sprint raporunu repor
 
 1. **Planlananları topla:** Issue'ları listele (numara, başlık, atanan kişi, son tarih, kabul kriteri).
 2. **Yapılanları doğrula:** Her Issue için kanıt yorumunu ve ilgili commit'i bul. Kabul kriterini dosyada gerçekten kontrol et:
-   - `data/sevkiyat-verisi.csv` var mı, en az 100 satır mı?
+   - `data/lojistik-sevkiyat.csv` var mı, en az 100 satır mı?
    - `docs/analiz-g1.md` içinde en az 5 metrik ve bulgular bölümü var mı?
    - `visuals/` içinde 2 PNG var mı?
    - `tests/test-cases.md` içinde en az 5 senaryo var mı?
