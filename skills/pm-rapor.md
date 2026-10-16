@@ -20,7 +20,7 @@ description: Grup B'nin (Lojistik / Sevkiyatlar) haftalık sprint raporunu repor
 2. **Yapılanları doğrula:** Her Issue için kanıt yorumunu ve ilgili commit'i bul. Kabul kriterini dosyada gerçekten kontrol et:
    - `data/lojistik-sevkiyat.csv` var mı, en az 100 satır mı?
    - `docs/analiz-g1.md` içinde en az 5 metrik ve bulgular bölümü var mı?
-   - `visuals/` içinde 2 PNG var mı?
+   - `visuals/zaman-serisi.png` ve `visuals/kirilim.png ` içinde 2 PNG var mı?
    - `tests/test-cases.md` içinde en az 5 senaryo var mı?
 3. **Devir teslim zincirini kontrol et:** BE → DQ/FE ("Veri hazır" yorumu G1-analiz ve G1-gorsel'de var mı?) ve DQ → FE ("Analiz hazır" yorumu G1-gorsel'de var mı?).
 4. **Tıkananları yaz:** Açık kalan Issue'lar, kaçırılan son tarihler, bekleyen devir teslimler ve nedenleri.
