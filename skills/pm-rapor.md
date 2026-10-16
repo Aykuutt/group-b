@@ -12,15 +12,15 @@ description: Grup B'nin (Lojistik / Sevkiyatlar) haftalık sprint raporunu repor
 - Hafta numarası (örn. `03`) ve haftanın tarih aralığı
 - Depo: `MAKU-VBA-GBT-II/group-b`
 - O haftanın Issue'ları: G1-veri, G1-analiz, G1-gorsel, G1-test
-- Proje panosu: < Logistics Intelligence Network (LIN) GRUP-B PANOSU> (To Do → In Progress → Done)
+- Proje panosu: <Logistics Intelligence Network (LIN) GRUP-B PANOSU> (To Do → In Progress → Done)
 
 ## Adımlar
 
 1. **Planlananları topla:** Issue'ları listele (numara, başlık, atanan kişi, son tarih, kabul kriteri).
-2. **Yapılanları doğrula:** Her Issue için kanıt yorumunu ve ilgili commit'i bul. Kabul kriterini dosyada gerçekten kontrol et:
+2. **Yapılanları doğrula:** Her Issue için kanıt yorumunu ve ilgili commit'i bul. Kabul kriterini dosyayı açıp gerçekten say ve kontrol et, tahmin etme:
    - `data/lojistik-sevkiyat.csv` var mı, en az 100 satır mı?
    - `docs/analiz-g1.md` içinde en az 5 metrik ve bulgular bölümü var mı?
-   - `visuals/zaman-serisi.png` ve `visuals/kirilim.png ` içinde 2 PNG var mı?
+   - `visuals/zaman-serisi.png` ve `visuals/kirilim.png` olmak üzere 2 PNG var mı?
    - `tests/test-cases.md` içinde en az 5 senaryo var mı?
 3. **Devir teslim zincirini kontrol et:** BE → DQ/FE ("Veri hazır" yorumu G1-analiz ve G1-gorsel'de var mı?) ve DQ → FE ("Analiz hazır" yorumu G1-gorsel'de var mı?).
 4. **Tıkananları yaz:** Açık kalan Issue'lar, kaçırılan son tarihler, bekleyen devir teslimler ve nedenleri.
@@ -32,7 +32,7 @@ description: Grup B'nin (Lojistik / Sevkiyatlar) haftalık sprint raporunu repor
 ```markdown
 # Sprint Raporu — Hafta XX (GG.AA–GG.AA.YYYY)
 
-**Şirket:** Grup B — Logistics Intelligence Network (LIN)  / Sevkiyatlar · **PM:** Sude Çukurtaş
+**Şirket:** Grup B — Logistics Intelligence Network (LIN) / Sevkiyatlar · **PM:** Sude Çukurtaş
 
 ## Planlanan
 | Issue | Başlık | Atanan | Son tarih |
@@ -64,4 +64,6 @@ description: Grup B'nin (Lojistik / Sevkiyatlar) haftalık sprint raporunu repor
 
 ## Nasıl çalıştırılır
 
-Ajana (Claude Code, Codex vb.): **"pm-rapor skill'ini kullanarak Hafta 03 için report-w03.md yaz."** Ajan GitHub'a
+Ajana (Claude Code, Codex vb.): **"pm-rapor skill'ini kullanarak Hafta 03 için report-w03.md yaz."**
+
+Ajan GitHub'a erişebiliyorsa Issue'ları, yorumları ve commit'leri kendisi okur. Erişemiyorsa gerekli çıktıları (Issue listesi, `git log`) ajana yapıştırın.
