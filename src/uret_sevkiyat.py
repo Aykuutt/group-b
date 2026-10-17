@@ -40,7 +40,7 @@ def uret(satir_sayisi=SATIR_SAYISI, tohum=TOHUM):
         mod = rng.choices(MODLAR, weights=MOD_AGIRLIK)[0]
         if mod == "hava":
             mesafe = round(mesafe * 0.85)
-        agirlik = rng.randint(50, 5000)
+        agirlik = rng.randint(10, 5000)
         ucret = round(agirlik * mesafe * KATSAYI[mod], 2)
         sure = mesafe / HIZ_KMH[mod] + rng.uniform(2, 12)
         durum = rng.choices(DURUMLAR, weights=DURUM_AGIRLIK)[0]
@@ -53,7 +53,7 @@ def uret(satir_sayisi=SATIR_SAYISI, tohum=TOHUM):
                          ucret, sure_deger, durum])
     satirlar.sort(key=lambda s: s[0])
     return [[f"SVK-{i + 1:04d}"] + s for i, s in enumerate(satirlar)]
-
+ 
 
 def main():
     veri = uret()
