@@ -6,10 +6,10 @@ Ajan, görev aldığında ilgili `SKILL.md` dosyasını okuyup talimatları izle
 | Skill | Konum | Sahibi | Ne işe yarar | Nasıl kullanılır |
 |---|---|---|---|---|
 | be-veri | `skills/be-veri/SKILL.md` | BE | Sabit tohumla 300 satırlık sevkiyat verisi üretir | `python src/veri_uret.py` |
-| dq-analiz | `skills/dq-analiz/SKILL.md` | DQ | Teslimat süresi, gecikme oranı, rota tablosu, haftalık hacim, top-3 rota metriklerini hesaplar | `python src/analiz.py` (BE devir teslimi sonrası) |
-| fe-gorsel | `skills/fe-gorsel/SKILL.md` | FE | Haftalık hacim ve rota yoğunluğu grafiklerini üretir | `python src/grafik_uret.py` (taslak Issue'ya eklendikten sonra) |
-| pm-rapor | `skills/pm-rapor/SKILL.md` | Sude ÇUKURTAŞ PM | Haftalık raporu commit/Issue geçmişinden hazırlar | Ajana: "pm-rapor skill'ini oku" |
+| dq-analiz | `skills/dq-analiz/SKILL.md` | DQ · Aykut Çakıcı | Sevkiyat verisinden metrik, gözlem ve eylem önerisi çıkarır | Görev #15 için önce bu skill'i oku; `docs/analiz-g1.md` dosyasını hazırla ve G1-gorsel'e devret |
+| fe-gorsel | `skills/fe-gorsel/SKILL.md` | FE · Ece Naz Aktürk | G1 lojistik sevkiyat verisinden zaman serisi ve taşıma modu kırılım grafiklerini üretir | `python src/grafik_uret.py` (taslak Issue'ya eklendikten sonra) |
 | dq-test | `skills/dq-test/SKILL.md` | DQ | Sevkiyat verisi için en az 5 manuel test senaryosu tanımlar; gerçekleşen sonuç alanlarını boş bırakır | Görev #17 için önce bu dosyayı oku; senaryoları `tests/test-cases.md` içine yaz |
+| pm-rapor | `skills/pm-rapor/SKILL.md` | Sude ÇUKURTAŞ PM | Haftalık raporu commit/Issue geçmişinden hazırlar | Ajana: "pm-rapor skill'ini oku" |
 
 ## Devir teslim zinciri
 BE veri → DQ analiz → FE görsel → DQ test → PM rapor.
