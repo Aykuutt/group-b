@@ -34,6 +34,7 @@ En az beş ana senaryo zorunludur. Ek senaryoları bonus olarak açıkça işare
 - Şemayla aynı 10 sütun ve sütun sırası/adları.
 - `agirlik_kg` 10–5000, `mesafe_km` 50–2500, `ucret_tl` sıfırdan büyük ve geçerli `tarih`.
 - `tasima_modu`: `kara`, `deniz`, `hava`, `demiryolu`; `durum`: `zamaninda`, `gecikmeli`, `iptal`.
+- `durum` değeri `iptal` olan satırlarda `teslim_suresi_saat` boş olmalı; teslim süresi ortalaması hesaplanırken bu satırlar dışarıda tutulmalı.
 - Bonus: `cikis_sehri` ve `varis_sehri` aynı olan satır bulunmaması.
 
 ## Sınırlar
