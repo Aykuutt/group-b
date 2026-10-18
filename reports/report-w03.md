@@ -10,7 +10,7 @@
 
 | Issue | Atanan | Kabul kriteri | Son tarih |
 |---|---|---|---|
-| G1-veri — Sektör verisini üret | BE | `data/lojistik-verisi.csv` depoda: en az 100 satır, şema `docs/veri-sozlugu-g1.md` içinde yazılı | 22 ekim 2026 |
+| G1-veri — Sektör verisini üret | BE | `data/lojistik-sevkiyat.csv` depoda: en az 100 satır, şema `docs/veri-sozlugu-g1.md` içinde yazılı | 22 ekim 2026 |
 | G1-analiz — Metrikleri hesapla ve bulguları yaz | DQ | `docs/analiz-g1.md` depoda: en az 5 metrik (en az ikisi kırılımlı), her birinin yorumu ve bulgular bölümü mevcut | 22 ekim 2026 |
 | G1-gorsel — 2 grafik üret | FE | 2 PNG grafik `/visuals` içinde: biri zaman serisi, diğeri kırılım; başlık ve eksen etiketi var; BE verisinden üretilmiş | 22 ekim 2026|
 | G1-test — Veri kalitesi testleri | DQ | `tests/test-cases.md` en az 5 senaryo içeriyor | 22 ekim 2026 |
