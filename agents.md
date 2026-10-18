@@ -8,7 +8,7 @@ Ajan, görev aldığında ilgili `SKILL.md` dosyasını okuyup talimatları izle
 | be-veri | `skills/be-veri/SKILL.md` | BE | Sabit tohumla 300 satırlık sevkiyat verisi üretir | `python src/veri_uret.py` |
 | dq-analiz | `skills/dq-analiz/SKILL.md` | DQ · Aykut Çakıcı | Sevkiyat verisinden metrik, gözlem ve eylem önerisi çıkarır | Görev #15 için önce bu skill'i oku; `docs/analiz-g1.md` dosyasını hazırla ve G1-gorsel'e devret |
 | fe-gorsel | `skills/fe-gorsel/SKILL.md` | FE · Ece Naz Aktürk | G1 lojistik sevkiyat verisinden zaman serisi ve taşıma modu kırılım grafiklerini üretir | `python src/grafik_uret.py` (taslak Issue'ya eklendikten sonra) |
-| dq-test | `skills/dq-test/SKILL.md` | DQ | 5 veri kalitesi test senaryosu yazar | Ajana: "dq-test skill'ini oku" |
+| dq-test | `skills/dq-test/SKILL.md` | DQ | Sevkiyat verisi için en az 5 manuel test senaryosu tanımlar; gerçekleşen sonuç alanlarını boş bırakır | Görev #17 için önce bu dosyayı oku; senaryoları `tests/test-cases.md` içine yaz |
 | pm-rapor | `skills/pm-rapor/SKILL.md` | Sude ÇUKURTAŞ PM | Haftalık raporu commit/Issue geçmişinden hazırlar | Ajana: "pm-rapor skill'ini oku" |
 
 ## Devir teslim zinciri
@@ -23,4 +23,3 @@ Her adım ilgili Issue'ya commit hash'li yorumla biter.
 - Gerçek kişi verisi asla depoya girmez; tüm veriler simülasyon ürünüdür.
 - Veri üretimi sabit tohumla tekrarlanabilir olmalıdır.
 - Hafta 5'ten itibaren `main`'e yalnızca PR ile girilir; kod/veri PR'ları DQ onayı olmadan merge edilmez.
-
