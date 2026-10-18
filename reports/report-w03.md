@@ -39,7 +39,7 @@ Ek PM görevleri: pano günlük kontrolü, `report-w03.md` commit'i, kök dizine
 
 | Üye | Rol | Yaptığı iş | Issue / Commit |
 |---|---|---|---|
-| Sude Çukurtaş | PM | <Yaptığı iş> | <#issue> |
-| Sema Coşkun | BE | <Yaptığı iş> | <#issue> |
-| Aykut Çakıcı | DQ | <Yaptığı iş> | <#issue> |
-| Ece Naz Aktürk | FE | <Yaptığı iş> | <#issue> |
+| Sude Çukurtaş | PM | Haftalık raporu commit/Issue geçmişinden hazırlar | <#issue> |
+| Sema Coşkun | BE | Sabit tohumla 300 satırlık sevkiyat verisi üretir | <#issue> |
+| Aykut Çakıcı | DQ |  Sevkiyat verisinden metrik, gözlem ve eylem önerisi çıkarır,Sevkiyat verisi için en az 5 manuel test senaryosu tanımlar; gerçekleşen sonuç alanlarını boş bırakır| <#issue> |
+| Ece Naz Aktürk | FE | G1 lojistik sevkiyat verisinden zaman serisi ve taşıma modu kırılım grafiklerini üretir | <#issue> |
