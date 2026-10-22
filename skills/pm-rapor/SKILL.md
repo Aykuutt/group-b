@@ -26,6 +26,7 @@ description: Grup B'nin (Lojistik / Sevkiyatlar) haftalık sprint raporunu repor
 4. **Tıkananları yaz:** Açık kalan Issue'lar, kaçırılan son tarihler, bekleyen devir teslimler ve nedenleri.
 5. **Kim ne yaptı:** Her üye için commit sayısı ve kapattığı Issue'lar.
 6. Raporu aşağıdaki şablonla `reports/report-wXX.md` olarak yaz; commit mesajı: `Hafta XX sprint raporu eklendi`.
+7. **Araç ve model kaydı:** Issue kapanış yorumuna tek satır ekle: "Bu rapor pm-rapor skill'i kullanılarak [araç adı / model] ile üretilmiştir."
 
 ## Şablon
 
@@ -65,5 +66,4 @@ description: Grup B'nin (Lojistik / Sevkiyatlar) haftalık sprint raporunu repor
 ## Nasıl çalıştırılır
 
 Ajana (Claude Code, Codex vb.): **"pm-rapor skill'ini kullanarak Hafta 03 için report-w03.md yaz."**
-
-Ajan GitHub'a erişebiliyorsa Issue'ları, yorumları ve commit'leri kendisi ok
+Ajan GitHub'a erişebiliyorsa Issue'ları, yorumları ve commit'leri kendisi okur; erişemiyorsa Issue listesi ve `git log` çıktısı ona verilir.
