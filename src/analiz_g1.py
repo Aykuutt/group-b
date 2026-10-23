@@ -120,6 +120,7 @@ def calculate(rows):
 
 def print_report(metrics):
     """Metrikleri okunabilir, tekrar üretilebilir biçimde yazdır."""
+    print(f"Veri dosyası: {CSV_PATH.relative_to(ROOT)}")
     print(f"Sevkiyat sayısı: {metrics['row_count']}")
     print(f"Toplam kayıtlı ücret: {money(metrics['total_fee']):.2f} TL")
     print(
