@@ -20,19 +20,24 @@ description: G1 lojistik sevkiyat verisini veri sözlüğüne göre analiz eder,
 
 1. Veri teslim yorumundaki commit'i, CSV'yi ve veri sözlüğünün sürümünü doğrula.
 2. CSV'yi UTF-8 olarak oku; sütunları veri sözlüğüyle eşleştir ve satır sayısını raporda belirt.
-3. Metrikleri aşağıdaki tanımlarla hesapla. Para ve saat değerlerini iki ondalık, yüzdeleri bir ondalık basamakla raporla.
-4. Her ana metriğin yanına bir veya iki cümlelik, veriye dayalı yorum yaz.
-5. En az üç somut gözlem ve bu gözlemlerden türetilmiş bir eylem önerisi ekle.
-6. G1-GÖRSEL Issue #16'ya, analiz commit hash'ini ve grafik için önerilen metrikleri içeren devir yorumu bırak.
+3. Depo kökünden `python src/analiz_g1.py` çalıştır; betiğin hesapladığı değerleri rapora aktar ve kaynağın commit'ini kaydet.
+4. Metrikleri aşağıdaki tanımlarla hesapla. Para ve saat değerlerini iki ondalık, yüzdeleri bir ondalık basamakla raporla.
+5. Her ana metriğin yanına bir veya iki cümlelik, veriye dayalı yorum yaz.
+6. En az üç somut gözlem ve bu gözlemlerden türetilmiş bir eylem önerisi ekle.
+7. G1-GÖRSEL Issue #16'ya, analiz commit hash'ini ve grafik için önerilen metrikleri içeren devir yorumu bırak.
 
 ## Metrik tanımları
 
-- Toplam ücret: CSV'deki 300 satırın `ucret_tl` değerlerinin toplamı. Rapor, bunun iptal kayıtlarındaki ücretleri de içerdiğini açıkça belirtmelidir.
+- Toplam ücret: CSV'deki tüm satırların `ucret_tl` değerlerinin toplamı. Rapor, bunun iptal kayıtlarındaki ücretleri de içerdiğini açıkça belirtmelidir.
 - Ortalama teslim süresi: `durum=iptal` satırlarını dışarıda bırak; yalnızca sayısal `teslim_suresi_saat` değerlerinin ortalamasını al.
 - Taşıma modu kırılımı: Her mod için sevkiyat adedi ve `ucret_tl` ortalamasını göster.
 - Varış şehri gecikme kırılımı: Her şehir için toplam kayıt, geciken kayıt ve iptal edilen kayıt sayısını göster. Gecikme oranının paydası, o şehrin iptal olmayan kayıtlarıdır (`zamaninda + gecikmeli`).
 - Top-3 varış şehri: `varis_sehri` başına sevkiyat adedini azalan sırada göster; eşitlikte şehir adını alfabetik sırala.
 - Aylık sevkiyat adedi: `tarih` alanını `yyyy-mm` düzeyinde grupla. Verinin kapsadığı ayları kullan; bulunmayan aylar için veri varmış gibi değer üretme.
+
+## Çalıştırma
+
+Depo kökünden `python src/analiz_g1.py` komutunu çalıştır. Betik `data/lojistik-sevkiyat.csv` dosyasını okur; toplam ücret, iptal hariç ortalama teslim süresi, mod ve varış şehri kırılımları, top-3 şehir, aylık adetler ve durum dağılımını yazdırır. Betik rapor dosyasını otomatik değiştirmez; sonuçları `docs/analiz-g1.md` ile karşılaştırıp gerektiğinde raporu güncelle.
 
 ## Çıktı koşulları
 
@@ -45,5 +50,4 @@ G1-GÖRSEL Issue #16 Ocak–Haziran 2026 serisi istiyor; v1.1 veri sözlüğü v
 - İptal kayıtlarını teslim süresi ortalamasına katma.
 - Eksik aylar veya gözlenmeyen veri için sonuç uydurma.
 - Sentetik veriden gerçek dünya nedenselliği veya operasyonel kesinlik çıkarma.
-- İstenen çıktı, bu görev için `docs/analiz-g1.md` ve bu skill dosyasıdır; test senaryolarını çalıştırma.
-
+- Test senaryolarını bu analiz skill'iyle çalıştırma; DQ test koşumunu `skills/dq-test/SKILL.md` izler.
