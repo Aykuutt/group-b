@@ -31,7 +31,7 @@ description: G1 lojistik sevkiyat verisini veri sözlüğüne göre analiz eder,
 - Toplam ücret: CSV'deki tüm satırların `ucret_tl` değerlerinin toplamı. Rapor, bunun iptal kayıtlarındaki ücretleri de içerdiğini açıkça belirtmelidir.
 - Ortalama teslim süresi: `durum=iptal` satırlarını dışarıda bırak; yalnızca sayısal `teslim_suresi_saat` değerlerinin ortalamasını al.
 - Taşıma modu kırılımı: Her mod için sevkiyat adedi ve `ucret_tl` ortalamasını göster.
-- Varış şehri gecikme kırılımı: Her şehir için toplam kayıt, geciken kayıt ve iptal edilen kayıt sayısını göster. Gecikme oranının paydası, o şehrin iptal olmayan kayıtlarıdır (`zamaninda + gecikmeli`).
+- Varış şehri gecikme kırılımı: Her şehir için toplam kayıt, geciken kayıt ve iptal edilen kayıt sayısını göster. Gecikme oranını `gecikmeli / (zamaninda + gecikmeli) × 100` formülüyle hesapla; paydada iptal kayıtlarını kullanma ve yüzdeyi bir ondalık basamakla raporla. Payda sıfırsa oranı `hesaplanamaz` (veya `—`) olarak göster; `0%` yazma.
 - Top-3 varış şehri: `varis_sehri` başına sevkiyat adedini azalan sırada göster; eşitlikte şehir adını alfabetik sırala.
 - Aylık sevkiyat adedi: `tarih` alanını `yyyy-mm` düzeyinde grupla. Verinin kapsadığı ayları kullan; bulunmayan aylar için veri varmış gibi değer üretme.
 
