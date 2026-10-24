@@ -4,7 +4,7 @@
 **Test Edilen Dosya:** `data/lojistik-sevkiyat.csv`  
 **Referans:** `tests/test-cases.md`, `docs/veri-sozlugu-g1.md` v1.1  
 **Test edilen upstream kaynak:** `main` @ `8962c03ba82cb214b28405cfd27295d1cea8246b` (CSV dosyası bu commit'te)  
-**Test yöntemi:** `tests/test-cases.md` senaryoları CSV üzerinde tek tek doğrulandı. Depoda `src/dq_test.py` bulunmadığından testler mevcut betikle koşturulamadı.  
+**Test yöntemi:** İlk koşum 2026-10-22'de elle yapıldı. Tekrarlanabilir sonraki koşumlar için `python src/dq_test.py` kullanılır; betik her senaryonun gerçekleşen sonucunu ve durumunu aşağıdaki otomatik koşum bölümüne yazar.
 **Test Eden:** Aykut Çakıcı (DQ)
 
 ---
@@ -45,4 +45,26 @@
 ## Tespit Edilen Hatalar ve Açılan Kayıtlar
 
 - Veri hatası tespit edilmedi; test sonucu 8/8 geçti.
-- İki somut iyileştirme önerisi Duyuru 5 kapsamında Issue olarak kaydedilecek.
+- İki somut iyileştirme önerisi Duyuru 5 kapsamında açıldı: tekrar kullanılabilir DQ test betiği (#38) ve üretim öncesi şema doğrulaması (#39).
+
+<!-- dq_test:results:start -->
+## Betikle Otomatik Koşum
+
+- Test tarihi: 2026-10-24
+- Komut: `python src/dq_test.py`
+- Test edilen veri SHA-256: `432a739590d20b9a9fee7d6cfd0b521c339107da80b1308593359e7d0ae5a727`
+
+| No | Senaryo | Gerçekleşen sonuç | Durum |
+|---:|---|---|---|
+| 1 | Sevkiyat dosyası mevcut ve okunabilir | 300 veri satırı okundu; başlık: 10 sütun | Geçti |
+| 2 | Asgari satır sayısı sağlanıyor | 300 veri satırı (alt sınır 100; hedef 300) | Geçti |
+| 3 | Sütun sayısı ve adları şemayla eşleşiyor | 10 sütun; beklenen 10 sütun | Geçti |
+| 4 | Sevkiyat kimlikleri benzersiz ve biçime uygun | 300 ID benzersiz ve SVK-0001–SVK-0300 aralığında | Geçti |
+| 5 | Tarih, tür ve sayısal aralıklar geçerli | tarih/aralık ihlali: 0 | Geçti |
+| 6 | Kategoriler ve şehir değerleri geçerli | mod, durum ve şehir değerlerinde ihlal yok; dört mod mevcut | Geçti |
+| 7 | İptal sevkiyatlarda teslim süresi boş | 12 iptal kaydı boş; 288 iptal olmayan kayıtta süre sayısal; ihlal 0 | Geçti |
+| 8 | Bonus: çıkış ve varış şehirleri farklı | aynı şehirli rota: 0 | Geçti |
+
+**Özet:** 8/8 geçti, 0 kaldı.
+<!-- dq_test:results:end -->
+
