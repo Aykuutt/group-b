@@ -143,11 +143,16 @@ def print_report(metrics):
         late_rate = (
             Decimal(values["late"]) * Decimal("100") / Decimal(non_cancelled)
             if non_cancelled
-            else Decimal("0")
+            else None
+        )
+        rate_text = (
+            f"{late_rate.quantize(Decimal('0.1')):.1f}%"
+            if late_rate is not None
+            else "hesaplanamaz"
         )
         print(
             f"- {city}: {values['total']}, {values['late']}, "
-            f"{values['cancelled']}, {late_rate.quantize(Decimal('0.1')):.1f}%"
+            f"{values['cancelled']}, {rate_text}"
         )
 
     print("\nEn çok sevkiyat alan ilk 3 varış şehri:")
